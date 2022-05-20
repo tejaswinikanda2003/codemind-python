@@ -12,3 +12,4 @@ for a in range(n,m+1):
     if prime(a):
         dc+=1
 print(dc)
+ 
