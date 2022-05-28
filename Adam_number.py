@@ -1,0 +1,17 @@
+n=int(input())
+sum=0
+sum1=0
+sq=n*n
+while(n):
+    d=n%10
+    sum=sum*10+d
+    n=n//10
+n1=sum*sum
+while(n1):
+    d1=n1%10
+    sum1=sum1*10+d1
+    n1=n1//10
+if(sum1==sq):
+    print('True')
+else:
+    print('False')
