@@ -17,4 +17,3 @@ while(True):
         e=c
         break
 print(e-d)
- 
