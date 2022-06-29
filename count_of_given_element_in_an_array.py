@@ -1,6 +1,8 @@
-n=int(input())
-a=list(map(int,input().split()))
-z=int(input())
-for i in range(len(a)):
-    b=a.count(z)
-print(b)
+a=int(input())
+l=map(int,input().split())
+b=int(input())
+c=0
+for i in range(a):
+    if b in l:
+        c=c+1
+print(c)
