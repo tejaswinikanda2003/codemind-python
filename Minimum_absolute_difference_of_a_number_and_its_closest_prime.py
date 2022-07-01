@@ -1,27 +1,44 @@
-def prime(a):
-    c=0
-    for i in range(1,a+1):
-        if a%i==0:
-            c+=1
-    if c==2:
-        return 1
+n=int(input())
+a=n+1
+b=n-1
+def pn(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
     else:
+        return True
+def op(n):
+    a=n+1
+    b=n-1
+    if pn(n):
+        print(0)
         return 0
-a=int(input())
-df=dl=l=f=0
-for i in range(a,0,-1):
-    if prime(i)==1:
-        f=i
-        df=a-i
-        break
-for i in range(a,10000):
-    if prime(i)==1:
-        l=i
-        dl=i-a
-        break
-if df==dl:
-    print(dl)
-elif df>dl:
-    print(dl)
-elif df<dl:
-    print(df)
+    while pn(a)==False:
+        a=a+1
+    while pn(b)==   False:
+        b=b-1
+    y=abs(a-n)
+    x=abs(b-n)
+    z=y
+    s=y
+    p=x
+    q=x
+    if x>y:
+        while pn(z)==False:
+            z=z+1
+        while pn(s)==False:
+            s=s-1
+        if abs(s-y)>abs(z-y):
+            print(z)
+        else:
+            print(s)
+    else:
+        while pn(p)==False:
+            p=p+1
+        while pn(q)==False:
+            q=q-1
+        if abs(p-x)>abs(q-x):
+            print(q)
+        else:
+            print(p)
+op(n)
